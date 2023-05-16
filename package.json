@@ -5,13 +5,17 @@
   "private": true,
   "scripts": {
     "build": "webpack --mode production",
-    "start": "webpack serve --mode development"
+    "start:dev": "webpack-dev-server",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy":"gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "homepage": "https://github.com/Peter-Dumbari/WebPack_Project",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
+    "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^6.7.3",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
@@ -30,6 +34,7 @@
     "webpack-dev-server": "^4.15.0"
   },
   "dependencies": {
+    "gh-pages": "^5.0.0",
     "lodash": "^4.17.21"
   }
 }
